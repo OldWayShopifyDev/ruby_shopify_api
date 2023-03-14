@@ -8,7 +8,7 @@ module ShopifyAPI
 
     self.timeout = 90
     self.include_root_in_json = false
-    self.headers['User-Agent'] = ["ShopifyAPI/#{ShopifyAPI::VERSION}",
+    self.headers['User-Agent'] = ["RubyShopifyAPI/#{ShopifyAPI::VERSION}",
                                   "ActiveResource/#{ActiveResource::VERSION::STRING}",
                                   "Ruby/#{RUBY_VERSION}"].join(' ')
 

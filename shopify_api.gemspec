@@ -3,9 +3,10 @@ $:.push(File.expand_path("../lib", __FILE__))
 require "shopify_api/version"
 
 Gem::Specification.new do |s|
-  s.name = %q{shopify_api}
+  s.name = %q{ruby_shopify_api}
   s.version = ShopifyAPI::VERSION
-  s.author = "Shopify"
+  s.authors = ["Hopper Gee"]
+  s.email = ["hopper.gee@hey.com"]
 
   s.summary = %q{The Shopify API gem is a lightweight gem for accessing the Shopify admin REST web services}
   s.description = <<~HERE
@@ -14,8 +15,7 @@ Gem::Specification.new do |s|
     all four verbs (GET/POST/PUT/DELETE). Each resource, like Order, Product, or
     Collection, has its own URL and is manipulated in isolation.
   HERE
-  s.email = %q{developers@jadedpixel.com}
-  s.homepage = %q{http://www.shopify.com/partners/apps}
+  s.homepage = %q{https://github.com/RetroShopifyDev/ruby-shopify-api}
 
   s.metadata['allowed_push_host'] = 'https://rubygems.org'
 

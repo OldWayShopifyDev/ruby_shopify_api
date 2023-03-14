@@ -11,7 +11,7 @@ class LogSubscriberTest < Test::Unit::TestCase
   def setup
     super
     @page = { page: { id: 1, title: 'Shopify API' } }.to_json
-    @ua_header = "\"User-Agent\"=>\"ShopifyAPI/#{ShopifyAPI::VERSION} " \
+    @ua_header = "\"User-Agent\"=>\"RubyShopifyAPI/#{ShopifyAPI::VERSION} " \
       "ActiveResource/#{ActiveResource::VERSION::STRING} Ruby/#{RUBY_VERSION}\""
     @request_headers = "Headers: {\"Accept\"=>\"application/json\", " \
       "#{@ua_header}, \"X-Shopify-Access-Token\"=>\"[FILTERED]\"}"
