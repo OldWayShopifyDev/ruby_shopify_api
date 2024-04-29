@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 require 'rubygems'
 require 'minitest/autorun'
+require "minitest/focus"
 require 'webmock/minitest'
 require_relative 'lib/webmock_extensions/last_request'
 require 'mocha/minitest'
-require 'pry'
 
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
@@ -114,13 +114,6 @@ module Test
         )
       end
 
-      def ar_version_before?(version_string)
-        Gem::Version.new(ActiveResource::VERSION::STRING) < Gem::Version.new(version_string)
-      end
-
-      def ar_version_after?(version_string)
-        Gem::Version.new(version_string) < Gem::Version.new(ActiveResource::VERSION::STRING)
-      end
     end
   end
 end

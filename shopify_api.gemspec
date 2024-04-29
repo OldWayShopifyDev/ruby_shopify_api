@@ -1,6 +1,6 @@
 # frozen_string_literal: true
-$:.push(File.expand_path("../lib", __FILE__))
-require "shopify_api/version"
+
+require_relative "lib/shopify_api/version"
 
 Gem::Specification.new do |s|
   s.name = %q{ruby_shopify_api}
@@ -32,16 +32,7 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = ">= 2.4"
 
-  s.add_runtime_dependency("activeresource", ">= 4.1.0")
+  s.add_runtime_dependency("activeresource")
   s.add_runtime_dependency("rack")
   s.add_runtime_dependency("graphql-client")
-
-  s.add_development_dependency("mocha", ">= 1.4.0")
-  s.add_development_dependency("webmock")
-  s.add_development_dependency("minitest", ">= 5.14")
-  s.add_development_dependency("rake")
-  s.add_development_dependency("timecop")
-  s.add_development_dependency("rubocop-shopify")
-  s.add_development_dependency("pry")
-  s.add_development_dependency("pry-byebug")
 end
