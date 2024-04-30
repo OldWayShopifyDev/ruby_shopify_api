@@ -10,7 +10,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 
 WebMock.disable_net_connect!
-require 'shopify_api'
+require 'ruby_shopify_api'
 
 # setup ShopifyAPI with fake api_key and secret
 module Test

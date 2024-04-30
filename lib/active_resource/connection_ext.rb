@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require 'shopify_api/connection'
+require 'ruby_shopify_api/connection'
 
 module ActiveResource
   class Connection

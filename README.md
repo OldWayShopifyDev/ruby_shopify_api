@@ -24,7 +24,7 @@ The REST API is implemented as JSON over HTTP using all four verbs (GET/POST/PUT
     - [4) Trading your `code` for an access token.](#4-trading-your-code-for-an-access-token)
     - [5) Activating the session](#5-activating-the-session)
     - [6A) Making requests to the GraphQL API](#6a-making-requests-to-the-graphql-api)
-          - [Note: the GraphQL client has improved and changed in version 9.0. See the client documentation for full usage details and a [migration guide](docs/graphql.md#migration-guide).](#note-the-graphql-client-has-improved-and-changed-in-version-90-see-the-client-documentation-for-full-usage-details-and-a-migration-guide)
+          - [Note: the GraphQL client has improved and changed in version 9.0. See the client documentation for full usage details and a migration guide.](#note-the-graphql-client-has-improved-and-changed-in-version-90-see-the-client-documentation-for-full-usage-details-and-a-migration-guide)
     - [6B) Making requests to the REST API](#6b-making-requests-to-the-rest-api)
   - [Console](#console)
   - [Thread safety](#thread-safety)
@@ -65,22 +65,22 @@ This gem requires Ruby 2.4 as of version 7.0.
 
 ## Installation
 
-Add `shopify_api` to your `Gemfile`:
+Add `ruby_shopify_api` to your `Gemfile`:
 
 ```ruby
-gem 'shopify_api'
+gem 'ruby_shopify_api'
 ```
 
 Or install via [gem](http://rubygems.org/)
 
 ```bash
-gem install shopify_api
+gem install ruby_shopify_api
 ```
 
 Once the gem is installed, it must be added to your project by placing the following line in your app :
 
 ```ruby
-require 'shopify_api'
+require 'ruby_shopify_api'
 ```
 
 ## Getting Started

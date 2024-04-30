@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require 'shopify_api/resources/customer'
+require 'ruby_shopify_api/resources/customer'
 
 module ShopifyAPI
   class CustomerSavedSearch < Base

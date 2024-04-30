@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/shopify_api/version"
+require_relative "lib/ruby_shopify_api/version"
 
 Gem::Specification.new do |s|
   s.name = %q{ruby_shopify_api}

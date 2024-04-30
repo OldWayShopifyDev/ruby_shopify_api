@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 require 'graphql/client'
-require 'shopify_api/graphql/http_client'
+require 'ruby_shopify_api/graphql/http_client'
 
 module ShopifyAPI
   module GraphQL

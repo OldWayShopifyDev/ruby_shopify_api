@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require 'shopify_api/version'
+require 'ruby_shopify_api/version'
 
 module ShopifyAPI
   class Base < ActiveResource::Base

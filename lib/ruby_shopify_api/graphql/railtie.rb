@@ -10,7 +10,7 @@ module ShopifyAPI
       end
 
       rake_tasks do
-        load 'shopify_api/graphql/task.rake'
+        load 'ruby_shopify_api/graphql/task.rake'
       end
     end
   end
